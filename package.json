@@ -7,13 +7,14 @@
     "start": "parcel index.html",
     "build": "parcel build index.html --target browser",
     "serve": "NODE_ENV=production node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
+    "parcel-bundler": "^1.9.3",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
   },
